@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>勤怠管理システム - ダッシュボード</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        .container { max-width: 800px; margin: auto; }
+        .section { margin-bottom: 20px; }
+        .section h2 { margin-bottom: 10px; }
+        .buttons button { margin-right: 10px; }
+        table { width: 100%; border-collapse: collapse; }
+        table, th, td { border: 1px solid black; }
+        th, td { padding: 8px; text-align: left; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="section">
+            <h2>ユーザー情報</h2>
+            <p>名前: 山田太郎</p>
+            <p>部署: 営業部</p>
+            <p>勤務日数: 20日</p>
+            <p>残業時間: 15時間</p>
+        </div>
+
+        <div class="section buttons">
+            <button>出勤</button>
+            <button>退勤</button>
+        </div>
+
+        <div class="section">
+            <h2>カレンダー</h2>
+            <table>
+                <tr><th>日付</th><th>状況</th></tr>
+                <tr><td>7/1</td><td>出勤 9:00 退勤 18:00</td></tr>
+                <tr><td>7/2</td><td>休暇</td></tr>
+                <tr><td>7/3</td><td>出勤 9:15 退勤 18:05</td></tr>
+            </table>
+        </div>
+
+        <div class="section">
+            <h2>勤怠入力</h2>
+            <form>
+                <label>勤務開始: <input type="time"></label><br>
+                <label>勤務終了: <input type="time"></label><br>
+                <label>休憩時間: <input type="number" min="0" step="1" placeholder="分"></label><br>
+                <button type="submit">申請</button>
+            </form>
+        </div>
+
+        <div class="section">
+            <h2>勤怠履歴</h2>
+            <table>
+                <tr><th>日付</th><th>状況</th></tr>
+                <tr><td>7/1</td><td>出勤 9:00 退勤 18:00</td></tr>
+                <tr><td>7/2</td><td>休暇</td></tr>
+                <tr><td>7/3</td><td>出勤 9:15 退勤 18:05</td></tr>
+            </table>
+            <button>修正申請</button>
+        </div>
+    </div>
+</body>
+</html>

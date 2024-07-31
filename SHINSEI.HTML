@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>勤怠管理システム - 休暇申請</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        .container { max-width: 800px; margin: auto; }
+        .section { margin-bottom: 20px; }
+        .section h2 { margin-bottom: 10px; }
+        label { display: block; margin: 10px 0; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="section">
+            <h2>休暇申請</h2>
+            <form>
+                <label>休暇種類:
+                    <select>
+                        <option>年次有給休暇</option>
+                        <option>特別休暇</option>
+                        <option>病欠</option>
+                    </select>
+                </label>
+                <label>開始日: <input type="date"></label>
+                <label>終了日: <input type="date"></label>
+                <label>理由: <textarea rows="4"></textarea></label>
+                <button type="submit">申請</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
